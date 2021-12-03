@@ -1,0 +1,76 @@
+.bg-color-2 {
+    background-color: #453f85;
+}
+.clients-section {
+    position: relative;
+    padding: 95px 0px;
+}
+.clients-section .pattern-layer .pattern-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 382px;
+    height: 234px;
+    background-repeat: no-repeat;
+}
+
+.clients-section .pattern-layer .pattern-2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 405px;
+    height: 211px;
+    background-repeat: no-repeat;
+}
+
+.clients-carousel.owl-carousel {
+    display: block;
+}
+.clients-carousel .owl-carousel {
+   
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.clients-carousel .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.elementor .elementor-widget:not(.elementor-widget-text-editor):not(.elementor-widget-theme-post-content) figure {
+    margin: 0;
+}
+.clients-section .clients-logo-box {
+    position: relative;
+    display: block;
+}
+a {
+    color: #45c0b6;
+}
+
+.carose{
+    width: 1080px;
+}
+
+.clients-logo-box img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+.clients-logo-box img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
