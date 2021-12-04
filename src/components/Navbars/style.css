@@ -14,8 +14,7 @@
 
 .sticky-header {
   position: fixed;
-  opacity: 0;
-  visibility: hidden;
+ 
   background: #fff;
   left: 0;
   top: 0;

@@ -6,10 +6,14 @@ const Scroll = () => {
   const [showScroll, setShowScroll] = useState(false)
   useEffect(() => {
     const listener = () => {
-      if (!showScroll && window.pageYOffset > 20) {
+      if (!showScroll && window.pageYOffset > 500) {
         setShowScroll(true)
-      } else if (showScroll && window.pageYOffset <= 20) {
+        document.getElementById('header-lower').classList.add('sticky-header')
+      } else if (showScroll && window.pageYOffset < 500) {
         setShowScroll(false)
+        document
+          .getElementById('header-lower')
+          .classList.remove('sticky-header')
       }
     }
     document.addEventListener('scroll', listener)

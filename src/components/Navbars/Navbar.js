@@ -6,9 +6,9 @@ import img from '../../assets/images/logo.svg'
 
 const Navbar = () => {
   return (
-    <main className="boxed_wrapper">
+    <main className="boxed_wrapper ">
       <header className="main-header style-two">
-        <div className="header-top">
+        <div className="header-top ">
           <div className="auto-container">
             <div className="top-inner clearfix">
               <div className="top-left pull-left">
@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="header-lower">
+        <div className="header-lower " id="header-lower">
           <div className="auto-container">
             <div className="outer-box">
               <div className="logo-box">

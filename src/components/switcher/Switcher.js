@@ -6,23 +6,21 @@ const Switcher = () => {
 
   useEffect(() => {
     const listener = (event) => {
-      setClick(!click)
       document.body.classList.add('boxed')
+      localStorage.setItem('screen', 'boxed')
     }
     const listener2 = () => {
-      setClick(!click)
       document.body.classList.remove('boxed')
+      localStorage.removeItem('screen')
     }
     const listener3 = () => {
-      setClick(!click)
       document.body.classList.add('rtl')
-      console.log('aaa')
+      localStorage.setItem('dir', 'rtl')
     }
 
     const listener4 = () => {
-      setClick(!click)
       document.body.classList.remove('rtl')
-      console.log('ltr')
+      localStorage.removeItem('dir')
     }
     document.querySelector('#boxed').addEventListener('click', listener)
     document.querySelector('#full').addEventListener('click', listener2)
@@ -45,19 +43,16 @@ const Switcher = () => {
           setClick(!click)
         }}
       >
-        {' '}
         <i className="fa fa-cog"></i>
       </div>
       <div className="layout-outer ">
         <div className="layout-option">
           <a href="##" id="boxed">
-            {' '}
             Boxed
           </a>
         </div>
         <div className="layout-option">
           <a href="##" id="full">
-            {' '}
             Full
           </a>
         </div>
@@ -80,42 +75,16 @@ const Switcher = () => {
 
       <div className="heading-panel"> Primary Color</div>
       <div className="colors-outer primary-color">
-        <div className="box" title="default" id="default">
-          default{' '}
-        </div>
-        <div className="box" title="color 2" id="color2">
-          color 2{' '}
-        </div>
-        <div className="box" title="color 3" id="color3">
-          color 3{' '}
-        </div>
-        <div className="box" title="color 4" id="color4">
-          color 4{' '}
-        </div>
-        <div className="box" title="color 5" id="color5">
-          color 5{' '}
-        </div>
-        <div className="box" title="color 6" id="color6">
-          color 6{' '}
-        </div>
-        <div className="box" title="color 7" id="color7">
-          color 7{' '}
-        </div>
-        <div className="box" title="color 8" id="color8">
-          color 8{' '}
-        </div>
-        <div className="box" title="color 9" id="color9">
-          color 9{' '}
-        </div>
-        <div className="box" title="color 10" id="color10">
-          color 10{' '}
-        </div>
-        <div className="box" title="color 11" id="color11">
-          color 11{' '}
-        </div>
-        <div className="box" title="color 12" id="color12">
-          color 12{' '}
-        </div>
+        <div className="box" title="default" id="default"></div>
+        {Array(11)
+          .fill()
+          .map((_, index) => (
+            <div
+              className="box"
+              title={`color${index + 2}`}
+              id={`color${index + 2}`}
+            ></div>
+          ))}
       </div>
     </div>
   )
