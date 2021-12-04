@@ -1,32 +1,34 @@
-import Client from './components/client-section/Client'
-import Banner from './components/banner-section/banner'
-import Navbar from './components/Navbars/Navbar'
-import Feature from './components/feature-section/Feature'
-import About from './components/about-section/About'
-import Process from './components/proceess-section/Process'
-import Test from './components/testimonial-section/Test'
-import Team from './components/team-section/Team'
-import Agent from './components/agent-section/Agent'
-import Switcher from './components/switcher/Switcher'
-import Scroll from './components/scroll/Scroll'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import { Navbar } from './components'
+import { Navbar, Scroll, Switcher } from './components'
 import { Home } from './pages'
-function App() {
+
+const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <Banner />
-      <Scroll />
+      {children}
       <Switcher />
-      <Client />
-      <Feature />
-      <About />
-      <Process />
-      <Test />
-      <Team />
-      <Agent />
+      <Scroll />
     </>
+  )
+}
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route
+          exact
+          path="/"
+          component={() => (
+            <Layout>
+              <Home />
+            </Layout>
+          )}
+        />
+        <Route path="*" component={() => <h1>Not found pages </h1>} />
+      </Switch>
+    </Router>
   )
 }
 
