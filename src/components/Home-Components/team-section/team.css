@@ -1,0 +1,171 @@
+.team-section {
+  position: relative;
+  padding: 115px 0px 120px 0px;
+}
+.team-block-one .inner-box {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  padding: 35px 40px 31px 157px;
+  margin-bottom: 30px;
+  box-shadow: 0 20px 50px rgb(0 24 73 / 7%);
+}
+.team-block-one .inner-box .pattern .pattern-1 {
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  width: 254px;
+  height: 115px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.team-block-one .inner-box .pattern .pattern-2 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 208px;
+  height: 104px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.team-block-one .inner-box .image-box {
+  height: auto !important;
+}
+.team-block-one .inner-box .image-box {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgb(0 24 73 / 20%);
+}
+.team-block-one .inner-box .image-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+.team-block-one .inner-box .content-box {
+  position: relative;
+}
+.team-block-one .inner-box .content-box .like-box span {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #eaf8f6;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #39cabb;
+}
+.team-block-one .inner-box .content-box .name-box li {
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 20px;
+}
+.team-block-one .inner-box .content-box .name-box li h3 {
+  position: relative;
+  display: block;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.team-block-one .inner-box .content-box .name-box li h3 a {
+  display: inline-block;
+  color: #061a3a;
+}
+.team-block-one .inner-box .content-box .name-box li:nth-child(2) {
+  color: #39cabb;
+}
+.team-block-one .inner-box .content-box .name-box li:nth-child(2) {
+  top: 2px;
+}
+.team-block-one .inner-box .content-box .name-box li {
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 20px;
+}
+
+.team-block-one .inner-box .content-box .designaion {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.team-block-one .inner-box .content-box .text {
+  position: relative;
+  margin-bottom: 9px;
+}
+.team-block-one .inner-box .content-box .text p {
+  line-height: 26px;
+}
+.team-block-one .inner-box .content-box .rating-box {
+  position: relative;
+  margin-bottom: 5px;
+  display: flex;
+}
+.team-block-one .inner-box .content-box .rating,
+.team-block-one .inner-box .content-box .link {
+  position: relative;
+  display: flex;
+}
+.team-block-one .inner-box .content-box .rating li.gold {
+  color: #ffab01;
+}
+.team-block-one .inner-box .content-box .rating li {
+  color: #a29fc2;
+}
+.team-block-one .inner-box .content-box .link {
+  font-size: 15px;
+  color: #39cabb;
+}
+.team-block-one .inner-box .content-box .link:before {
+  position: absolute;
+  content: '';
+  background: #e5e5e5;
+  width: 1px;
+  height: 18px;
+  left: 0px;
+  top: 4px;
+}
+.team-block-one .inner-box .content-box .link {
+  padding-left: 15px;
+  margin-left: 15px;
+}
+.team-block-one .inner-box .content-box .location-box {
+  position: relative;
+  display: block;
+}
+.team-block-one .inner-box .content-box .btn-box {
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
+}
+.team-block-one .inner-box .content-box .btn-box a {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 600;
+  border: 2px solid #ebeef1;
+  border-radius: 30px;
+  padding: 7px 30px;
+}
+.team-block-one .inner-box .content-box .btn-box a {
+  color: #39cabb;
+}
+.team-block-one .inner-box .content-box .btn-box a:hover {
+  color: #fff;
+  background: #39cabb;
+  border-color: #39cabb;
+}

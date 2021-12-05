@@ -1,12 +1,12 @@
 import React from 'react'
 import './process.css'
-import shape17 from '../../assets/images/shape-17.png'
-import shape18 from '../../assets/images/shape-18.png'
-import shape19 from '../../assets/images/shape-19.png'
-import shape20 from '../../assets/images/shape-20.png'
-import im4 from '../../assets/images/4.svg'
-import im5 from '../../assets/images/5.svg'
-import im6 from '../../assets/images/6.svg'
+import shape17 from '../../../assets/images/shape-17.png'
+import shape18 from '../../../assets/images/shape-18.png'
+import shape19 from '../../../assets/images/shape-19.png'
+import shape20 from '../../../assets/images/shape-20.png'
+import im4 from '../../../assets/images/4.svg'
+import im5 from '../../../assets/images/5.svg'
+import im6 from '../../../assets/images/6.svg'
 const Process = () => {
   return (
     <section className="process-section bg-color-2 ">

@@ -1,6 +1,6 @@
 import React from 'react'
-import shap from '../../assets/images/shape-2.png'
-import banner from '../../assets/images/banner-image-1-1.png'
+import shap from '../../../assets/images/shape-2.png'
+import banner from '../../../assets/images/banner-image-1-1.png'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import './banner.css'
