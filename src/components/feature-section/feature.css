@@ -149,7 +149,7 @@
 .theme-btn-one i {
     position: relative;
     font-size: 13px;
-    margin-left: 10px;
+    margin-inline: 10px;
 }
 .feature-block-one .inner-box:hover {
     box-shadow: 0 20px 30px #cee4e2;
