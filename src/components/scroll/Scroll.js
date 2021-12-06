@@ -20,7 +20,7 @@ const Scroll = () => {
     return () => {
       document.removeEventListener('scroll', listener)
     }
-    // eslint-disable-next-line
+    
   }, [showScroll])
 
   const scrollTop = () => {
