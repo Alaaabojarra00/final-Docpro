@@ -11,7 +11,7 @@ import {
 } from '../components'
 export const Home = () => {
   return (
-    <div classname="Home-page">
+    <div className="Home-page">
       <Banner />
 
       <Client />

@@ -5,7 +5,7 @@ import about1 from '../../../assets/images/about-1.png'
 
 const About = () => {
   return (
-    <section className="elementor-section ">
+    <section className="elementor-section " id="elementor-section">
       <div className="elementor-container aaa ">
         <div className="elementor-column ">
           <div className="elementor-widget-wrap ">

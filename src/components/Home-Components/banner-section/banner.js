@@ -8,7 +8,7 @@ import { useState } from 'react'
 const Banner = () => {
   const [input, setInput] = useState('')
   return (
-    <section className=" banner-section bg-color-1">
+    <section className=" banner-section bg-colo/r-1" id="banner-section">
       <div
         className="pattern-layer"
         style={{ backgroundImage: `url(${shap})` }}

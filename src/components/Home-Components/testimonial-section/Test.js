@@ -13,7 +13,10 @@ import './test.css'
 
 function Test() {
   return (
-    <section className="testimonial-section bg-color-3 ">
+    <section
+      className="testimonial-section bg-color-3 "
+      id="testimonial-section"
+    >
       <div
         className="bg-layer"
         style={{ backgroundImage: ` url(${testimonial})` }}

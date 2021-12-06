@@ -49,7 +49,7 @@ const TeamItem = [
 ]
 const Team = () => {
   return (
-    <section className=" team-section">
+    <section className=" team-section" id="team-section">
       <div className="auto-container">
         <div className="sec-title centred">
           <p>MEET OUR PROFESSIONALS</p>
@@ -57,7 +57,10 @@ const Team = () => {
         </div>
         <div className="row clearfix">
           {TeamItem.map((value, index) => (
-            <div className="col-lg-6 col-md-12 col-sm-12 team-block">
+            <div
+              className="col-lg-6 col-md-12 col-sm-12 team-block"
+              key={index}
+            >
               <div
                 className="team-block-one wow fadeInLeft animated animated"
                 data-wow-delay="00ms"
@@ -154,7 +157,7 @@ const Rate = (i) => {
       {Array(5)
         .fill()
         .map((_, index) => (
-          <li className={index < i ? 'gold' : ''}>
+          <li className={index < i ? 'gold' : ''} key={index}>
             <i className="fa fa-star" aria-hidden="true"></i>
           </li>
         ))}

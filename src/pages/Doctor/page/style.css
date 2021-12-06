@@ -1,0 +1,35 @@
+.page-number {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-number li > a {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background: transparent;
+  border: 1px solid #e6e8ec;
+  border-radius: 50%;
+  text-align: center;
+  color: #061a3a;
+  z-index: 1;
+  transition: all 500ms ease;
+  margin-inline: 10px;
+  cursor: pointer;
+}
+.page-number a:hover {
+  background: #39cabb;
+  border-color: #39cabb;
+  color: #fff;
+}
+.page-number a.active {
+  background: #39cabb;
+  border-color: #39cabb;
+  color: #fff;
+}

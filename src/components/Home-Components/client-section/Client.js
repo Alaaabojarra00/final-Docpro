@@ -23,7 +23,7 @@ const Client = () => {
     cssEase: 'linear',
   }
   return (
-    <section className="clients-section bg-color-2 ">
+    <section className="clients-section bg-color-2 " id="clients-section">
       <div className="pattern-layer">
         <div
           className="pattern-1"

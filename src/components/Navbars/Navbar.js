@@ -6,7 +6,7 @@ import img from '../../assets/images/logo.svg'
 
 const Navbar = () => {
   return (
-    <main className="boxed_wrapper ">
+    <div className="boxed_wrapper ">
       <header className="main-header style-two">
         <div className="header-top ">
           <div className="auto-container">
@@ -40,12 +40,12 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="header-lower " id="header-lower">
+        <div className="header-lower" id="header-lower">
           <div className="auto-container">
             <div className="outer-box">
               <div className="logo-box">
                 <figure className="logo">
-                  <a href="index.html" title="Docpro">
+                  <a href="/" title="Docpro">
                     <img src={img} alt="logo" />
                   </a>
                 </figure>
@@ -58,32 +58,32 @@ const Navbar = () => {
                   >
                     <ul className="navigation clearfix">
                       <li>
-                        <a title="Home" href="index.html">
+                        <a title="Home" href="#banner-section">
                           Home
                         </a>
                       </li>
                       <li>
-                        <a title="about" href="index.html">
+                        <a title="about" href="#elementor-section">
                           About
                         </a>
                       </li>
                       <li>
-                        <a title="about" href="index.html">
+                        <a title="Department" href="/">
                           Department
                         </a>
                       </li>
                       <li>
-                        <a title="about" href="index.html">
+                        <a title="Doctors" href="/">
                           Doctors
                         </a>
                       </li>
                       <li>
-                        <a title="about" href="index.html">
+                        <a title="Clinic" href="/">
                           Clinic
                         </a>
                       </li>
                       <li>
-                        <a title="about" href="index.html">
+                        <a title="Blog" href="/">
                           Blog
                         </a>
                       </li>
@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-    </main>
+    </div>
   )
 }
 

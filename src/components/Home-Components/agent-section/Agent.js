@@ -2,7 +2,7 @@ import React from 'react'
 import './agent.css'
 const Agent = () => {
   return (
-    <section className=" agent-section">
+    <section className=" agent-section" id="agent-section">
       <div className="auto-container">
         <div className="inner-container bg-color-2">
           <div className="row clearfix">
