@@ -1,0 +1,51 @@
+.ClinicSection {
+  margin-top: 5rem;
+}
+.ClinicSection .select-box > li .single-checkbox {
+  margin-inline: 10px;
+}
+.select-field .auto-container .content-box .form-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  align-items: center;
+}
+.select-field .auto-container .content-box .form-inner .search-fields {
+  order: 1;
+}
+.select-field .content-box .form-group {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 0;
+  padding: 0.1rem 1rem;
+  display: flex;
+}
+.sidebar-page-container .select-field .content-box .form-group .wide {
+  top: 17px;
+  left: 20px;
+  margin-inline: 10px;
+}
+.select-field .content-box .form-group input {
+  position: relative;
+  display: block;
+  float: left;
+  width: 415px;
+  border: none;
+  height: 60px;
+  font-size: 16px;
+  color: #848484;
+  padding: 10px 40px 10px 40px;
+}
+
+.select-field .content-box .search-fields .form-group button {
+  background: #3acabb;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}

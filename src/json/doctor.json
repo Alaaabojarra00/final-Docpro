@@ -1,0 +1,92 @@
+[
+
+  {
+  "  image_url": "team10",
+    "name": "Dr. Mary Astor",
+    "address":" 56/2 Road-1 Gulshan, Dhaka",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC, HSC, MBBS, MRCP, DHA ",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": false,
+    "rate": 2
+  },
+  {
+  "  image_url": "team10",
+    "name": "Dr. Esam Alsawah",
+    "address":" damascus ,jdaydet artouz",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC, HSC, MBBS, MRCP ",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": true,
+    "rate":5
+  },
+  {
+  "  image_url": "team10",
+    "name": "Dr. Alla ",
+    "address":" 56/2 Road-1 Gulshan, Dhaka",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": true,
+    "rate": 2
+  },
+  {
+  "  image_url": "team10",
+    "name": "Dr. masa ",
+    "address":" london",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC, HSC, MBBS, MRCP, DHA ",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": true,
+    "rate": 5
+  },
+  {
+  "  image_url": "team10",
+    "name": "Dr. Mary Astozjkdjr",
+    "address":" 56/2 Road-1 Gulshan, Dhaka",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC, HSC, MBBS, MRCP, DHA ",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": false,
+    "rate": 2
+  },
+  {
+  "  image_url": "team10",
+    "name": "Dr. Esam ",
+    "address":" damascus ,jdaydet artouz",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC, HSC, MBBS, MRCP ",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": true,
+    "rate":5
+  },
+  {
+  "  image_url": "team10",
+    "name": "okskdkals ",
+    "address":" 56/2 Road-1 Gulshan, Dhaka",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": true,
+    "rate": 2
+  },
+  {
+  "  image_url": "team10",
+    "name": "adsjsakdjsad ",
+    "address":" london",
+    "time":"Every Day 9:00AM -8:00PM",
+    "designaion": "SSC, HSC, MBBS, MRCP, DHA ",
+    "description":
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
+    "available": true,
+    "rate": 5
+  }
+
+]

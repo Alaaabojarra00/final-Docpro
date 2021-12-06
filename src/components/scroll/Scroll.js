@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './scroll.css'
-import { useState, useEffect } from 'react'
 
 const Scroll = () => {
   const [showScroll, setShowScroll] = useState(false)
+
   useEffect(() => {
     const listener = () => {
-      if (!showScroll && window.pageYOffset > 500) {
+      if (window.pageYOffset >= 400) {
         setShowScroll(true)
         document.getElementById('header-lower').classList.add('sticky-header')
-      } else if (showScroll && window.pageYOffset < 500) {
+      } else if (window.pageYOffset < 400) {
         setShowScroll(false)
         document
           .getElementById('header-lower')

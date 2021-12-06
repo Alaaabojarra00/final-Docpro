@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import shape13 from '../../../assets/images/shape-13.png'
 import shape14 from '../../../assets/images/shape-14.png'
 import shape5 from '../../../assets/images/shape-5.png'
@@ -24,6 +25,7 @@ const ItemFeature = [
     desc: 'Appointment With',
     title: 'Nearest Clinic',
     buttonText: 'All Clinics',
+    link: 'all-clinic',
   },
   {
     patternBox_1: shape6,
@@ -32,6 +34,7 @@ const ItemFeature = [
     desc: 'Live Chat With',
     title: 'Doctor',
     buttonText: 'All Doctor',
+    link: 'all-doctor',
   },
   {
     patternBox_1: shape7,
@@ -40,6 +43,7 @@ const ItemFeature = [
     desc: 'Appoinment With Top',
     title: 'Departments',
     buttonText: 'Departments',
+    link: 'all-departments',
   },
   {
     patternBox_1: shape8,
@@ -48,11 +52,15 @@ const ItemFeature = [
     desc: '24/7 Active Support',
     title: 'Help Support',
     buttonText: 'Contact Us',
+    link: 'contact-us',
   },
 ]
 const Feature = () => {
   return (
-    <section className=" feature-section centred bg-color-3">
+    <section
+      className=" feature-section centred bg-color-3"
+      id="feature-section"
+    >
       <div className="pattern-layer">
         <div
           className="pattern-1"
@@ -97,10 +105,10 @@ const Feature = () => {
                     </a>
                   </div>
                   <div className="btn-box">
-                    <a href="all-clinic-2/index.html" className="theme-btn-one">
+                    <Link to={value.link} className="theme-btn-one">
                       {value.buttonText}
                       <i className="fa fa-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

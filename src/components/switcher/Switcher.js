@@ -83,6 +83,7 @@ const Switcher = () => {
               className="box"
               title={`color${index + 2}`}
               id={`color${index + 2}`}
+              key={index}
             ></div>
           ))}
       </div>

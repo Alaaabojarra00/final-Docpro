@@ -9,7 +9,7 @@ import im5 from '../../../assets/images/5.svg'
 import im6 from '../../../assets/images/6.svg'
 const Process = () => {
   return (
-    <section className="process-section bg-color-2 ">
+    <section className="process-section bg-color-2 " id="process-section">
       <div className="pattern-layer">
         <div
           className="pattern-1"
