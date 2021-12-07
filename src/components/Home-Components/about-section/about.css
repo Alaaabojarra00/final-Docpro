@@ -1,53 +1,5 @@
-.elementor-section {
-  position: relative;
-}
-.elementor-section .aaa {
-  max-width: 1140px;
-}
-.elementor-section .elementor-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.parent-about {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-}
-.elementor-column,
-.elementor-column-wrap {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.elementor-column {
-  min-height: 1px;
-}
-.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.elementor-widget-wrap {
-  position: relative;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-}
-.elementor-widget-wrap > .elementor-element {
-  width: 100%;
-}
-.elementor-element .elementor-widget-container {
-  -webkit-transition: background 0.3s, border 0.3s, -webkit-border-radius 0.3s,
-    -webkit-box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, -webkit-border-radius 0.3s,
-    -webkit-box-shadow 0.3s;
-  -o-transition: background 0.3s, border 0.3s, border-radius 0.3s,
-    box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
-    -webkit-border-radius 0.3s, -webkit-box-shadow 0.3s;
 }
 .about-section {
   position: relative;
@@ -60,7 +12,7 @@
 }
 .image_block_1 .image-box:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #b7e9e1;
   width: 400px;
   height: 400px;
@@ -156,7 +108,7 @@ section.about-section.two {
 }
 p {
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #808080;
   font-weight: 400;
   margin: 0px;
@@ -170,7 +122,7 @@ p {
   display: block;
   font-size: 18px;
   line-height: 26px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: #00224f;
   font-weight: 500;
   margin-bottom: 8px;
@@ -182,7 +134,7 @@ p {
 }
 .list-style-one li:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 14px;
   height: 14px;
   left: 0px;
