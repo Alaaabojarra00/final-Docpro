@@ -91,6 +91,7 @@
 .boxinformation .clinic-block-one .inner-box .content-box .rating-box {
   position: relative;
   margin-bottom: 5px;
+  display: flex;
 }
 .boxinformation .clinic-block-one .inner-box .content-box .rating {
   position: relative;
@@ -118,7 +119,7 @@
 
 .boxinformation .clinic-block-one .inner-box .content-box .link:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #e5e5e5;
   width: 1px;
   height: 18px;
@@ -142,4 +143,25 @@
 .clinic-block-one .inner-box .content-box .btn-box a:hover {
   background-color: #39cabb;
   color: #fff;
+}
+.clinic-block-one .inner-box:hover .pattern .pattern-1 {
+  left: 0px;
+  opacity: 1;
+}
+.clinic-block-one .inner-box:hover .pattern .pattern-2 {
+  opacity: 1;
+}
+.clinic-block-one .inner-box .content-box .name-box li h3 {
+  position: relative;
+  display: block;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.clinic-block-one .inner-box .content-box .name-box li h3 a {
+  display: inline-block;
+  color: #061a3a;
+}
+.clinic-block-one .inner-box .content-box .rating li:last-child {
+  color: #ffab01;
 }

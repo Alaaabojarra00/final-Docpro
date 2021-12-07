@@ -19,7 +19,7 @@ const Boxinformation = (props) => {
               }}
             ></div>
             <div
-              className="pattern-1"
+              className="pattern-2"
               style={{
                 backgroundImage: `url(
                   ${shape25}
