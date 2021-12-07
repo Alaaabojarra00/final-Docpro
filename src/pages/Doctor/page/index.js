@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import DoctorData from '../../../json/doctor.json'
 import { Boxinformation } from '../../../components'
 
@@ -22,12 +22,12 @@ const DoctorPages = ({ children, id = 1 }) => {
                 .fill()
                 .map((_, index) => (
                   <li key={index}>
-                    <Link
+                    <NavLink
                       to={`/all-doctor/pages/${index + 1}`}
                       className={id === index + 1 ? 'active' : ''}
                     >
                       {index + 1}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
             </ul>

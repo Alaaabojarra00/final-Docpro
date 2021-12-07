@@ -75,7 +75,7 @@ ul {
 }
 .footer-top .links-widget .links li a:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 0%;
   height: 1px;
   left: 0px;
@@ -88,16 +88,16 @@ ul {
 .main-footer li {
   line-height: 35px;
 }
-.one {
+.footer-section .one {
   width: 34.3%;
 }
-.two {
+.footer-section .two {
   width: 17.895%;
 }
-.three {
+.footer-section .three {
   width: 22.743%;
 }
-.four {
+.footer-section .four {
   width: 25%;
 }
 .footer-top .contact-widget .widget-content li {
@@ -141,7 +141,7 @@ ul {
 }
 .footer-bottom .footer-nav li:first-child::before {
   position: absolute;
-  content: "";
+  content: '';
   background: #fff;
   width: 1px;
   height: 13px;

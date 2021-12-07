@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Footer, Navbar, Scroll, Switcher } from "./components";
 import { Home, Clinic, Doctor } from "./pages";
+import { Footer, Navbar, Scroll, Agent } from "./components";
+
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
       {children}
-      <Switcher />
       <Scroll />
+      <Agent />
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
-import React from "react";
-import "./footer.css";
-import logo2 from "../../assets/images/logo2.svg";
+import React from 'react'
+import './footer.css'
+import logo2 from '../../assets/images/logo2.svg'
 
 function Footer() {
   return (
@@ -53,7 +53,7 @@ function Footer() {
                           </li>
                           <li>
                             <a href="pricing-details/index.html">
-                              Pricing Details{" "}
+                              Pricing Details{' '}
                             </a>
                           </li>
                           <li>
@@ -170,7 +170,7 @@ function Footer() {
         </div>
       </footer>
     </section>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

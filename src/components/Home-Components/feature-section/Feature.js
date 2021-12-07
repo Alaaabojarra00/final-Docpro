@@ -1,60 +1,60 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import shape13 from '../../../assets/images/shape-13.png'
-import shape14 from '../../../assets/images/shape-14.png'
-import shape5 from '../../../assets/images/shape-5.png'
-import shape9 from '../../../assets/images/shape-9.png'
-import shape6 from '../../../assets/images/shape-6.png'
-import shape7 from '../../../assets/images/shape-7.png'
-import shape8 from '../../../assets/images/shape-8.png'
-import shape10 from '../../../assets/images/shape-10.png'
-import shape11 from '../../../assets/images/shape-11.png'
-import shape12 from '../../../assets/images/shape-12.png'
-import shape1 from '../../../assets/images/1.svg'
-import shape2 from '../../../assets/images/2.svg'
-import shape3 from '../../../assets/images/3.svg'
-import shape15 from '../../../assets/images/15.svg'
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import './feature.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import shape13 from "../../../assets/images/shape-13.png";
+import shape14 from "../../../assets/images/shape-14.png";
+import shape5 from "../../../assets/images/shape-5.png";
+import shape9 from "../../../assets/images/shape-9.png";
+import shape6 from "../../../assets/images/shape-6.png";
+import shape7 from "../../../assets/images/shape-7.png";
+import shape8 from "../../../assets/images/shape-8.png";
+import shape10 from "../../../assets/images/shape-10.png";
+import shape11 from "../../../assets/images/shape-11.png";
+import shape12 from "../../../assets/images/shape-12.png";
+import shape1 from "../../../assets/images/1.svg";
+import shape2 from "../../../assets/images/2.svg";
+import shape3 from "../../../assets/images/3.svg";
+import shape15 from "../../../assets/images/15.svg";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./feature.css";
 
 const ItemFeature = [
   {
     patternBox_1: shape5,
     patternBox_2: shape9,
     iconBox: shape1,
-    desc: 'Appointment With',
-    title: 'Nearest Clinic',
-    buttonText: 'All Clinics',
-    link: 'all-clinic',
+    desc: "Appointment With",
+    title: "Nearest Clinic",
+    buttonText: "All Clinics",
+    link: "all-clinic",
   },
   {
     patternBox_1: shape6,
     patternBox_2: shape10,
     iconBox: shape2,
-    desc: 'Live Chat With',
-    title: 'Doctor',
-    buttonText: 'All Doctor',
-    link: 'all-doctor',
+    desc: "Live Chat With",
+    title: "Doctor",
+    buttonText: "All Doctor",
+    link: "all-doctor",
   },
   {
     patternBox_1: shape7,
     patternBox_2: shape11,
     iconBox: shape3,
-    desc: 'Appoinment With Top',
-    title: 'Departments',
-    buttonText: 'Departments',
-    link: 'all-departments',
+    desc: "Appoinment With Top",
+    title: "Departments",
+    buttonText: "Departments",
+    link: "all-departments",
   },
   {
     patternBox_1: shape8,
     patternBox_2: shape12,
     iconBox: shape15,
-    desc: '24/7 Active Support',
-    title: 'Help Support',
-    buttonText: 'Contact Us',
-    link: 'contact-us',
+    desc: "24/7 Active Support",
+    title: "Help Support",
+    buttonText: "Contact Us",
+    link: "contact-us",
   },
-]
+];
 const Feature = () => {
   return (
     <section
@@ -117,7 +117,7 @@ const Feature = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

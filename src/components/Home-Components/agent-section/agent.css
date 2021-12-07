@@ -1,136 +1,140 @@
 .agent-section {
-    position: relative;
+  position: relative;
 }
 .agent-section .inner-container {
-    position: relative;
-    padding: 50px 50px;
-    border-radius: 10px;
-    margin-bottom: -140px;
-    z-index: 1;
+  position: relative;
+  padding: 50px 50px;
+  border-radius: 10px;
+  margin-bottom: -140px;
+  z-index: 1;
 }
 .content_block_3 .content-box {
-    position: relative;
-    display: block;
-    border: 1px dashed rgba(255,255,255,0.3);
-    border-radius: 10px;
-    padding: 27px 40px 36px 40px;
+  position: relative;
+  display: block;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 27px 40px 36px 40px;
 }
-.content_block_3 .content-box:before, .content_block_4 .content-box:before {
-    background: #39cabb;
+.content_block_3 .content-box:before,
+.content_block_4 .content-box:before {
+  background: #39cabb;
 }
-.content_block_3 .content-box:before, .content_block_4 .content-box:before {
-    position: absolute;
-    content: '';
-    left: 40px;
-    top: -1px;
-    width: 145px;
-    height: 5px;
+.content_block_3 .content-box:before,
+.content_block_4 .content-box:before {
+  position: absolute;
+  content: "";
+  left: 40px;
+  top: -1px;
+  width: 145px;
+  height: 5px;
 }
 .content_block_3 .content-box .support-box {
-    position: relative;
-    padding-left: 65px;
+  position: relative;
+  padding-left: 65px;
 }
 .content_block_3 .content-box .support-box .icon-box {
-    color: #39cabb;
+  color: #39cabb;
 }
 .content_block_3 .content-box .support-box .icon-box {
-    position: absolute;
-    left: 0px;
-    top: 12px;
-    font-size: 26px;
-    line-height: 30px;
+  position: absolute;
+  left: 0px;
+  top: 12px;
+  font-size: 26px;
+  line-height: 30px;
 }
-
 
 .content_block_3 .content-box .support-box .icon-box:before {
-    position: absolute;
-    content: '';
-    height: 44px;
-    width: 36px;
-    top: -5px;
-    left: 0px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 60% 0%);
-    opacity: 0.1;
+  position: absolute;
+  content: "";
+  height: 44px;
+  width: 36px;
+  top: -5px;
+  left: 0px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 60% 0%);
+  opacity: 0.1;
 }
 .content_block_3 .content-box .support-box span {
-    font-size: 15px;
-    line-height: 26px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 0px;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0px;
 }
 .content_block_3 .content-box .support-box h3 {
-    display: block;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin-bottom: 0px;
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 .content_block_3 .content-box .support-box h3 a {
-    color: #39cabb;
+  color: #39cabb;
 }
 .content_block_3 .content-box .support-box h3 a {
-    display: inline-block;
+  display: inline-block;
 }
 .content_block_4 .content-box {
-    position: relative;
-    display: block;
-    border: 1px dashed rgba(255,255,255,0.3);
-    border-radius: 10px;
-    padding: 29px 40px 37px 40px;
+  position: relative;
+  display: block;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 29px 40px 37px 40px;
 }
 .content_block_4 .content-box h3 {
-    display: block;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 21px;
+  display: block;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 21px;
 }
 .content_block_3 .content-box h3 {
-    display: block;
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 14px;
+  display: block;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 14px;
 }
 .content_block_4 .content-box .subscribe-form .form-group {
-    position: relative;
-    margin: 0px;
-    padding-right: 160px;
-    border-radius: 30px;
-    overflow: hidden;
+  position: relative;
+  margin: 0px;
+  padding-right: 160px;
+  border-radius: 30px;
+  overflow: hidden;
 }
-.content_block_4 .content-box .subscribe-form .form-group input[type='email'] {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 50px;
-    border: 1 px solid rgba(255,255,255,0.1);
-    background: rgba(255,255,255,0.1);
-    font-size: 15px;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px 0px 0px 30px;
-    transition: all 500ms ease;
+.content_block_4 .content-box .subscribe-form .form-group input[type="email"] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1 px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px 0px 0px 30px;
+  transition: all 500ms ease;
 }
 .content_block_4 .content-box .subscribe-form .form-group button {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border-radius: 0px;
-    padding: 12px 30px;
-    box-shadow: none;
-    transition: all 500ms ease;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0px;
+  padding: 12px 30px;
+  box-shadow: none;
+  transition: all 500ms ease;
 }
 .content_block_4 .content-box .subscribe-form .form-group button:before {
-    border-radius: 0px;
-    background: #fff;
+  border-radius: 0px;
+  background: #fff;
 }
 .theme-btn-one i {
-    position: relative;
-    font-size: 13px;
-    margin-left: 10px;
+  position: relative;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.content_block_4 .content-box .subscribe-form .form-group button:hover {
+  color: #39cabb !important;
 }

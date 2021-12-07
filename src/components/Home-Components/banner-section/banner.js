@@ -1,12 +1,12 @@
-import React from 'react'
-import shap from '../../../assets/images/shape-2.png'
-import banner from '../../../assets/images/banner-image-1-1.png'
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import React from "react";
+import shap from "../../../assets/images/shape-2.png";
+import banner from "../../../assets/images/banner-image-1-1.png";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import './banner.css'
-import { useState } from 'react'
+import "./banner.css";
+import { useState } from "react";
 const Banner = () => {
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState("");
   return (
     <section className=" banner-section bg-colo/r-1" id="banner-section">
       <div
@@ -27,6 +27,10 @@ const Banner = () => {
                       name="n"
                       placeholder="Ex. Name, Specialization..."
                       required=""
+                      value={input}
+                      onChange={(e) => {
+                        setInput(e.target.value);
+                      }}
                     />
                     <button type="submit">
                       <i className="fa fa-arrow-right" aria-hidden="true"></i>
@@ -36,14 +40,11 @@ const Banner = () => {
                     <li>
                       <div className="single-checkbox">
                         <input
-                          value={input}
-                          onChange={(e) => {
-                            setInput(e.target.value)
-                          }}
                           type="radio"
                           name="status"
                           id="check1"
-                          checked=""
+                          checked="checked"
+                          onChange={(e) => e.target.checked}
                         />
                         <label htmlFor="check1">
                           <span></span>All Clinic
@@ -82,7 +83,7 @@ const Banner = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

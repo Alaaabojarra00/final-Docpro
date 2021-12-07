@@ -1,52 +1,52 @@
-import React from 'react'
-import shape24 from '../../../assets/images/shape-24.png'
-import shape25 from '../../../assets/images/shape-25.png'
-import team10 from '../../../assets/images/team-10.jpg'
-import team11 from '../../../assets/images/team-11.jpg'
-import './team.css'
+import React from "react";
+import shape24 from "../../../assets/images/shape-24.png";
+import shape25 from "../../../assets/images/shape-25.png";
+import team10 from "../../../assets/images/team-10.jpg";
+import team11 from "../../../assets/images/team-11.jpg";
+import "./team.css";
 
 const TeamItem = [
   {
     image_url: null,
-    name: 'DR.esam',
-    address: 'Damascus ,Jdaydet-Artouz',
-    designaion: 'SSC, HSC, MBBS, MRCP, DHA - Periodontology and BDS Khulna',
+    name: "DR.esam",
+    address: "Damascus ,Jdaydet-Artouz",
+    designaion: "SSC, HSC, MBBS, MRCP, DHA - Periodontology and BDS Khulna",
     description:
-      'Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna',
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
     available: false,
     rate: 5,
   },
   {
     image_url: null,
-    name: ' Alaa',
-    address: 'Homs',
-    designaion: 'SSC, HSC',
+    name: " Alaa",
+    address: "Homs",
+    designaion: "SSC, HSC",
     description:
-      'Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna',
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
     available: false,
     rate: 1,
   },
   {
     image_url: team10,
-    name: 'Dr. Mary Astor',
-    address: '56/2 Road-1 Gulshan, Dhaka',
-    designaion: 'SSC, HSC, MBBS, MRCP, DHA ',
+    name: "Dr. Mary Astor",
+    address: "56/2 Road-1 Gulshan, Dhaka",
+    designaion: "SSC, HSC, MBBS, MRCP, DHA ",
     description:
-      'Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna',
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna",
     available: true,
     rate: 2,
   },
   {
     image_url: team11,
-    name: 'Aristor Aris',
-    address: '11/9 Road-2, Kurigram',
-    designaion: 'MBBS - Gunocology',
+    name: "Aristor Aris",
+    address: "11/9 Road-2, Kurigram",
+    designaion: "MBBS - Gunocology",
     description:
-      'Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.',
+      "Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.",
     available: true,
     rate: 4,
   },
-]
+];
 const Team = () => {
   return (
     <section className=" team-section" id="team-section">
@@ -116,7 +116,7 @@ const Team = () => {
                     <div className="rating-box clearfix">
                       {Rate(value.rate)}
                       <div className="link">
-                        {value.available ? 'Available' : 'Not Available'}
+                        {value.available ? "Available" : "Not Available"}
                       </div>
                     </div>
                     <div className="location-box">
@@ -124,7 +124,7 @@ const Team = () => {
                         <i
                           className="fas fa-map-marker-alt"
                           style={{
-                            marginInlineEnd: '5px',
+                            marginInlineEnd: "5px",
                           }}
                         ></i>
                         {value.address}
@@ -146,10 +146,10 @@ const Team = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;
 
 const Rate = (i) => {
   return (
@@ -157,11 +157,11 @@ const Rate = (i) => {
       {Array(5)
         .fill()
         .map((_, index) => (
-          <li className={index < i ? 'gold' : ''} key={index}>
+          <li className={index < i ? "gold" : ""} key={index}>
             <i className="fa fa-star" aria-hidden="true"></i>
           </li>
         ))}
-      <li style={{ marginInlineStart: '5px' }}>({i})</li>
+      <li style={{ marginInlineStart: "5px" }}>({i})</li>
     </ul>
-  )
-}
+  );
+};
