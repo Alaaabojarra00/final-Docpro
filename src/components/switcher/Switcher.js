@@ -26,13 +26,6 @@ const Switcher = () => {
     document.querySelector('#full').addEventListener('click', listener2)
     document.querySelector('#rtl').addEventListener('click', listener3)
     document.querySelector('#normal').addEventListener('click', listener4)
-    return () => {
-      document.querySelector('#boxed').removeEventListener('click', listener)
-      document.querySelector('#full').removeEventListener('click', listener2)
-      document.querySelector('#rtl').removeEventListener('click', listener3)
-      document.querySelector('#normal').removeEventListener('click', listener4)
-    }
-    // eslint-disable-next-line
   }, [])
 
   return (

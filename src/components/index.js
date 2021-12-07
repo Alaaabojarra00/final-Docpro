@@ -1,4 +1,5 @@
 export { default as Navbar } from './Navbars/Navbar'
+export { default as Footer } from './footer/Footer'
 export { default as Switcher } from './switcher/Switcher'
 export { default as Scroll } from './scroll/Scroll'
 export { default as Banner } from './Home-Components/banner-section/banner'

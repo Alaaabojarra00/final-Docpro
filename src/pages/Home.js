@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   Banner,
   Client,
@@ -7,20 +7,25 @@ import {
   Process,
   Test,
   Team,
-  Agent,
+  Switcher,
 } from '../components'
 export const Home = () => {
+  useEffect(() => {
+    const dir = localStorage.getItem('dir')
+    const screen = localStorage.getItem('screen')
+    document.body.classList.add(dir)
+    document.body.classList.add(screen)
+  }, [])
   return (
     <div className="Home-page">
       <Banner />
-
+      <Switcher />
       <Client />
       <Feature />
       <About />
       <Process />
       <Test />
       <Team />
-      <Agent />
     </div>
   )
 }
