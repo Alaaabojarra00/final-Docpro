@@ -25,10 +25,7 @@ const Boxinformation = (props) => {
             ></div>
           </div>
           <figure className="image-box">
-            <img
-              src="http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/team-11.jpg"
-              alt="Aristor Aris"
-            />
+            <img src={obj.image_url} alt="Aristor Aris" />
           </figure>
           <div className="content-box">
             <div
@@ -47,17 +44,19 @@ const Boxinformation = (props) => {
                 </h3>
               </li>
               <li className="tt--top" aria-label="Available">
-                <i class="fas fa-check"></i>
+                <i className="fas fa-check"></i>
               </li>
             </ul>
-            <span className="designation">{obj.designaion}</span>
+            {obj.designaion && (
+              <span className="designation">{obj?.designaion}</span>
+            )}
             <div className="text">
               <p>{obj.description}</p>
             </div>
             <div className="rating-box clearfix">
               {Rate(obj.rate)}
 
-              <div className="link">{obj.time}</div>
+              {obj.time && <div className="link">{obj.time}</div>}
             </div>
             <div className="flex">
               <div className="location-box">
@@ -67,9 +66,7 @@ const Boxinformation = (props) => {
                 </p>
 
                 <div className="btn-box">
-                  <a href="http://wp4.ourwpdemo.com/docpro/profiles/doctor/newdoctor2">
-                    Visit Now
-                  </a>
+                  <a href="/ ">Visit Now</a>
                 </div>
               </div>
             </div>

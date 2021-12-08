@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Home, Clinic, Doctor } from './pages'
 import { Footer, Navbar, Scroll, Agent } from './components'
@@ -51,6 +50,15 @@ const App = () => {
           component={() => (
             <Layout>
               <Doctor />
+            </Layout>
+          )}
+        />
+        <Route
+          exact
+          path="/all-clinic/pages/:id"
+          component={() => (
+            <Layout>
+              <Clinic />
             </Layout>
           )}
         />

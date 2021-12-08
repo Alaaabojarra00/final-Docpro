@@ -1,0 +1,82 @@
+[
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/03/department-4.jpg",
+        "name": "Hepburn Medical",
+        "address":" 11/9 Road-2, Kurigram",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": false,
+        "rate": 2
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/5-1.jpg",
+        "name": "Highland Hospital",
+        "address":" 25/1 Road-1 , Pabna",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": false,
+        "rate": 1
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/3-1.jpg",
+        "name": "Memorial Hospital",
+        "address":" 56/2 Road-1 Gulshan, Dhaka",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": true,
+        "rate": 4
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/8-1.jpg",
+        "name": "newdoctor",
+        "address":" 56/2 Road-1 Gulshan, Dhaka",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": true,
+        "rate": 4
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/10-1.jpg",
+        "name": "Queens Hospital",
+        "address":" 24/3 Road-1, Natore",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": true,
+        "rate": 4
+  },{
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/03/department-4.jpg",
+        "name": "Hepburn Medical",
+        "address":" 11/9 Road-2, Kurigram",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": false,
+        "rate": 2
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/5-1.jpg",
+        "name": "Highland Hospital",
+        "address":" 25/1 Road-1 , Pabna",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": false,
+        "rate": 1
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/3-1.jpg",
+        "name": "Memorial Hospital",
+        "address":" 56/2 Road-1 Gulshan, Dhaka",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": true,
+        "rate": 4
+  },
+     {
+        "image_url": "http://wp4.ourwpdemo.com/docpro/wp-content/uploads/2021/02/8-1.jpg",
+        "name": "newdoctor",
+        "address":" 56/2 Road-1 Gulshan, Dhaka",
+        "description":
+        "Porsche odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+        "available": true,
+        "rate": 4
+  }
+]
