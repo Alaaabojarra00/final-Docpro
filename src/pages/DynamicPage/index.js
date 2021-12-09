@@ -1,29 +1,28 @@
 import React, { useEffect } from 'react'
 import './style.css'
 import { NavLink } from 'react-router-dom'
-import DoctorData from '../../../json/doctor.json'
-import { Boxinformation } from '../../../components'
+import { Boxinformation } from '../../components'
 
-const DoctorPages = ({ children, id = 1 }) => {
+const DynamicPage = ({ children, id = 1, data, url }) => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [id])
-  const lengthPages = parseInt(DoctorData.length / 5) + 1
+  const lengthPages = parseInt(data.length / 5) + 1
   return (
     <div>
       {children}
       <br />
-      <div class="auto-container">
-        <div class="row clearfix">
-          <div class="col-md-12 col-sm-12 content-side col-xs-12 col-sm-12 col-md-12">
-            {ReadData(id)}
+      <div className="auto-container">
+        <div className="row clearfix">
+          <div className="col-md-12 col-sm-12 content-side col-xs-12 col-sm-12 col-md-12">
+            {ReadData(data, id)}
             <ul className="page-number">
               {Array(lengthPages)
                 .fill()
                 .map((_, index) => (
                   <li key={index}>
                     <NavLink
-                      to={`/all-doctor/pages/${index + 1}`}
+                      to={`${url}${index + 1}`}
                       className={id === index + 1 ? 'active' : ''}
                     >
                       {index + 1}
@@ -38,12 +37,12 @@ const DoctorPages = ({ children, id = 1 }) => {
   )
 }
 
-export default DoctorPages
+export default DynamicPage
 
-const ReadData = (id) => {
+const ReadData = (data, id) => {
   const i = id * 5
 
-  return DoctorData.slice(i - 5, i).map((value, index) => {
+  return data.slice(i - 5, i).map((value, index) => {
     return <Boxinformation key={index} obj={value} />
   })
 }

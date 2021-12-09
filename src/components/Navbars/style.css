@@ -14,7 +14,7 @@
 
 .sticky-header {
   position: fixed;
- 
+
   background: #fff;
   left: 0;
   top: 0;
@@ -103,7 +103,7 @@
 
 .main-header.style-two .header-top .top-left li:before {
   position: absolute;
-  content: '';
+  content: "";
   background: rgba(255, 255, 255, 0.2);
   width: 1px;
   height: 16px;
@@ -184,7 +184,7 @@ a:hover {
 .main-menu .navigation > li:hover > a {
   color: #39cabb;
 }
-.main-menu .navigation > li > a {
+.main-menu .navigation li a {
   position: relative;
   display: block;
   text-align: center;
@@ -209,7 +209,7 @@ a:hover {
 .clearfix::after {
   display: block;
   clear: both;
-  content: '';
+  content: "";
 }
 
 a {

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, Clinic, Doctor } from "./pages";
+import { Home, Clinic, Doctor, ContactUs } from "./pages";
 import { Footer, Navbar, Scroll, Agent } from "./components";
 
 const Layout = ({ children }) => {
@@ -53,10 +53,28 @@ const App = () => {
         />
         <Route
           exact
+          path="/contact-us"
+          component={() => (
+            <Layout>
+              <ContactUs />
+            </Layout>
+          )}
+        />
+        <Route
+          exact
           path="/all-doctor/pages/:id"
           component={() => (
             <Layout>
               <Doctor />
+            </Layout>
+          )}
+        />
+        <Route
+          exact
+          path="/all-clinic/pages/:id"
+          component={() => (
+            <Layout>
+              <Clinic />
             </Layout>
           )}
         />

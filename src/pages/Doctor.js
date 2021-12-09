@@ -1,13 +1,13 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { PageTitle, ClinicSection } from '../components'
+import DoctorData from '../json/doctor.json'
 import DynamicPage from './DynamicPage'
-import ClinicData from '../json/clinic.json'
-export const Clinic = () => {
+export const Doctor = () => {
   const { id } = useParams()
   return (
-    <DynamicPage id={id} data={ClinicData} url="/all-clinic/pages/">
-      <PageTitle title="All Clinic" />
+    <DynamicPage id={id} data={DoctorData} url="/all-doctor/pages/">
+      <PageTitle title="All Doctor" />
       <ClinicSection />
     </DynamicPage>
   )

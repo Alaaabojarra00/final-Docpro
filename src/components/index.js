@@ -13,3 +13,4 @@ export { default as Agent } from "./Home-Components/agent-section/Agent";
 export { default as PageTitle } from "./PageTitle/PageTitle";
 export { default as ClinicSection } from "./Clinic-section/ClinicSection";
 export { default as Boxinformation } from "./Boxinformation/Boxinformation";
+export { default as Contact } from "./Contact-us/Contact";

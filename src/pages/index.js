@@ -1,3 +1,4 @@
-export * from './Home'
-export * from './Clinic'
-export * from './Doctor/Doctor'
+export * from "./Home";
+export * from "./Clinic";
+export * from "./Doctor";
+export * from "./Contact";

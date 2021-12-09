@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import './style.css'
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./style.css";
 
-import img from '../../assets/images/logo.svg'
+import img from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -88,10 +89,13 @@ const Navbar = () => {
                           Blog
                         </a>
                       </li>
+
                       <li>
-                        <a title="Contact Us" href="contact-us/index.html">
-                          Contact Us
-                        </a>
+                        <Link to="/contact-Us">
+                          <a title="Contact Us" href="/">
+                            Contact Us
+                          </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -102,7 +106,7 @@ const Navbar = () => {
         </div>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
