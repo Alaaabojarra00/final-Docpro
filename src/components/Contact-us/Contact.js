@@ -7,7 +7,7 @@ import img17 from "../../assets/images/17.svg";
 import img18 from "../../assets/images/18.svg";
 function Contact() {
   return (
-    <div>
+    <div id="conatct-us">
       <section className="information-section sec-pad centred bg-color-3 ">
         <div
           className="pattern-7"

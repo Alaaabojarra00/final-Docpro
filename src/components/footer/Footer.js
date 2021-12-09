@@ -1,6 +1,7 @@
-import React from 'react'
-import './footer.css'
-import logo2 from '../../assets/images/logo2.svg'
+import React from "react";
+import "./footer.css";
+import logo2 from "../../assets/images/logo2.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -44,26 +45,22 @@ function Footer() {
                       <div className="widget-content">
                         <ul className="links clearfix">
                           <li>
-                            <a href="about-us/index.html">About Us</a>
+                            <a href="#about-section">About Us</a>
                           </li>
                           <li>
-                            <a href="special-offer/index.html">
-                              Special Offers
-                            </a>
+                            <a href="##">Special Offers</a>
                           </li>
                           <li>
-                            <a href="pricing-details/index.html">
-                              Pricing Details{' '}
-                            </a>
+                            <a href="##">Pricing Details </a>
                           </li>
                           <li>
-                            <a href="department/index.html">Our Services</a>
+                            <a href="##">Our Services</a>
                           </li>
                           <li>
-                            <a href="blog/index.html">Our Blog</a>
+                            <a href="##">Our Blog</a>
                           </li>
                           <li>
-                            <a href="contact-us/index.html">Contact Us</a>
+                            <Link to="/contact-Us">Contact Us</Link>
                           </li>
                         </ul>
                       </div>
@@ -170,7 +167,7 @@ function Footer() {
         </div>
       </footer>
     </section>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

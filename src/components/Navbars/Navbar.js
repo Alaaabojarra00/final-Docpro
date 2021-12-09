@@ -65,7 +65,7 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a title="about" href="#elementor-section">
+                        <a title="about" href="#about-section">
                           About
                         </a>
                       </li>
@@ -91,11 +91,7 @@ const Navbar = () => {
                       </li>
 
                       <li>
-                        <Link to="/contact-Us">
-                          <a title="Contact Us" href="/">
-                            Contact Us
-                          </a>
-                        </Link>
+                        <Link to="/contact-Us">Contact Us</Link>
                       </li>
                     </ul>
                   </div>
