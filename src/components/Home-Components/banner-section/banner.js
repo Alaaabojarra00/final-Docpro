@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect , useRef} from "react";
 import shap from "../../../assets/images/shape-2.png";
 import banner from "../../../assets/images/banner-image-1-1.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -7,6 +7,28 @@ import "./banner.css";
 import { useState } from "react";
 const Banner = () => {
   const [input, setInput] = useState("");
+
+  const ref =useRef();
+  useEffect(() => {
+    
+      const listener = (event) => {
+     if(ref.current&&event.target&&ref.current.contains(event.target)){
+      document.getElementById('c').classList.add("ss")
+      
+        }  
+        else{
+          document.getElementById('c').classList.remove("ss")
+        } 
+      };
+      document.addEventListener("mousemove", listener);
+      
+      return()=>{
+        document.removeEventListener("mousemove",listener)
+        
+        
+      }
+    
+  }, []);
   return (
     <section className=" banner-section bg-colo/r-1" id="banner-section">
       <div
@@ -14,7 +36,7 @@ const Banner = () => {
         style={{ backgroundImage: `url(${shap})` }}
       ></div>
       <div className="auto-container">
-        <div className="row align-items-center clearfix">
+        <div className="row align-items-center ">
           <div className="col-lg-6 col-md-12 col-sm-12 content-column">
             <div className="content-box">
               <h1>Find Nearest Doctor.</h1>
@@ -69,13 +91,9 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-            <div className="image-box js-tilt">
-              <figure
-                className="image clearfix wow fadeInRight animated animated"
-                data-wow-delay="00ms"
-                data-wow-duration="1500ms"
-              >
+          <div className="col-lg-6 col-md-12 col-sm-12 image-column ">
+            <div ref={ref} id="c" className="image-box ">
+              <figure className="image ">
                 <img src={banner} alt=""></img>
               </figure>
             </div>
