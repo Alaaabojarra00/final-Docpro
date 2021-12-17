@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./contact-us.css";
 import shape87 from "../../assets/images/shape-87.png";
 import shape88 from "../../assets/images/shape-88.png";
@@ -6,6 +6,7 @@ import img16 from "../../assets/images/16.svg";
 import img17 from "../../assets/images/17.svg";
 import img18 from "../../assets/images/18.svg";
 function Contact() {
+  const [input,setInput] = useState("");
   return (
     <div id="conatct-us">
       <section className="information-section sec-pad centred bg-color-3 ">
@@ -90,116 +91,100 @@ function Contact() {
           </div>
         </div>
       </section>
-      <section class="contact-section ">
-        <div class="auto-container">
-          <div class="row clearfix">
-            <div class="col-lg-12 col-md-12 col-sm-12 form-column">
-              <div class="form-inner">
-                <div class="sec-title">
+      <section className="contact-section ">
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-lg-12 col-md-12 col-sm-12 form-column">
+              <div className="form-inner">
+                <div className="sec-title">
                   <p>Contact</p>
                   <h2>Contact Us</h2>
                 </div>
                 <div
                   role="form"
-                  class="wpcf7"
-                  id="wpcf7-f1081-p124-o1"
+                  className="wpcf7"
+                
                   lang="en-US"
                   dir="ltr"
                 >
-                  <div class="screen-reader-response">
+                  <div className="screen-reader-response">
                     <p role="status" aria-live="polite" aria-atomic="true"></p>{" "}
                     <ul></ul>
                   </div>
                   <form
-                    action="http://wp4.ourwpdemo.com/docpro/contact-us/#wpcf7-f1081-p124-o1"
-                    method="post"
-                    class="wpcf7-form init"
-                    novalidate="novalidate"
-                    data-status="init"
+               
                   >
-                    <div class="default-form">
-                      <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <span class="wpcf7-form-control-wrap text-752">
+                    <div className="default-form">
+                      <div className="row clearfix">
+                        <div className="col-lg-6 col-md-6 col-sm-12 form-group">
+                          <span className="wpcf7-form-control-wrap text-752">
                             <input
                               type="text"
-                              name="text-752"
-                              value=""
-                              size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                              aria-required="true"
-                              aria-invalid="false"
+                              
+                              value={input}
+                              onChange={(e)=>{setInput(e.target.value)}}
+                             
                               placeholder="Your name"
                             />
                           </span>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <span class="wpcf7-form-control-wrap email-847">
+                        <div className="col-lg-6 col-md-6 col-sm-12 form-group">
+                          <span className="wpcf7-form-control-wrap email-847">
                             <input
                               type="email"
-                              name="email-847"
-                              value=""
-                              size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                              aria-required="true"
-                              aria-invalid="false"
+                              
+                              value={input}
+                              onChange={(e)=>{setInput(e.target.value)}}
+                              
+                             
                               placeholder="Your email"
                             />
                           </span>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                          <span class="wpcf7-form-control-wrap text-752">
+                        <div className="col-lg-6 col-md-12 col-sm-12 form-group">
+                          <span className="wpcf7-form-control-wrap text-752">
                             <input
                               type="text"
-                              name="text-752"
-                              value=""
-                              size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                              aria-required="true"
-                              aria-invalid="false"
+                              
+                              value={input}
+                              onChange={(e)=>{setInput(e.target.value)}}
+                             
                               placeholder="Phone number"
                             />
                           </span>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                          <span class="wpcf7-form-control-wrap text-752">
+                        <div className="col-lg-6 col-md-12 col-sm-12 form-group">
+                          <span className="wpcf7-form-control-wrap text-752">
                             <input
                               type="text"
                               name="text-752"
-                              value=""
-                              size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                              aria-required="true"
-                              aria-invalid="false"
+                              value={input}
+                              onChange={(e)=>{setInput(e.target.value)}}
+                           
                               placeholder="Subject"
                             />
                           </span>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                          <span class="wpcf7-form-control-wrap textarea-302">
+                        <div className="col-lg-12 col-md-12 col-sm-12 form-group">
+                          <span className="wpcf7-form-control-wrap textarea-302">
                             <textarea
-                              name="textarea-302"
-                              cols="40"
-                              rows="10"
-                              class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                              aria-required="true"
-                              aria-invalid="false"
+                             
                               placeholder="Your Message ..."
                             ></textarea>
                           </span>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
+                        <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                           <button
-                            class="theme-btn-one"
+                            className="theme-btn-one"
                             type="submit"
                             name="submit-form"
                           >
-                            Send Message<i class="icon-Arrow-Right"></i>
+                            Send Message<i className="icon-Arrow-Right"></i>
                           </button>
                         </div>
                       </div>
                     </div>
-                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                    <div className="wpcf7-response-output" aria-hidden="true"></div>
                   </form>
                 </div>{" "}
               </div>

@@ -198,7 +198,7 @@ img {
   transition: all 500ms ease;
 }
 .theme-btn-one:hover {
-  color: #39cabb !important;
+  color:#fff !important;
 }
 .theme-btn-one:hover:before {
   transform: scale(1, 1);

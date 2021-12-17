@@ -45,7 +45,7 @@ const Agent = () => {
                         placeholder="Your Email"
                         required=""
                       />
-                      <button type="submit" className="theme-btn-one">
+                      <button type="submit" className="theme-btn-one w-color">
                         Submit now<i className="fa fa-arrow-right"></i>
                       </button>
                     </div>

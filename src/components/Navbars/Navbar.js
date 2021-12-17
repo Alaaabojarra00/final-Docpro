@@ -60,9 +60,9 @@ const Navbar = () => {
                   >
                     <ul className="navigation clearfix">
                       <li>
-                        <a title="Home" href="#banner-section">
-                          Home
-                        </a>
+                      <Link to="/">Home</Link>
+                          
+                        
                       </li>
                       <li>
                         <a title="about" href="#about-section">
@@ -75,14 +75,12 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a title="Doctors" href="/">
-                          Doctors
-                        </a>
+                      <Link to="/all-doctor">Doctors</Link>
                       </li>
                       <li>
-                        <a title="Clinic" href="/">
-                          Clinic
-                        </a>
+                      <Link to="/all-clinic">Clinic</Link>
+                          
+    
                       </li>
                       <li>
                         <a title="Blog" href="/">
@@ -94,6 +92,7 @@ const Navbar = () => {
                         <Link to="/contact-Us">Contact Us</Link>
                       </li>
                     </ul>
+                    <div className="btn-box"><a href="##" className="theme-btn-one"><i className="icon-image fa fa-plus"></i>Appointment </a></div>
                   </div>
                 </nav>
               </div>
