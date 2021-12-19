@@ -74,3 +74,6 @@ a {
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
 }
+.slick-arrow{
+    display: none !important;
+}

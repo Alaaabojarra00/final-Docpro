@@ -2,6 +2,7 @@ import React, { useEffect , useRef} from "react";
 import shap from "../../../assets/images/shape-2.png";
 import banner from "../../../assets/images/banner-image-1-1.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import {useSpring , animated} from "react-spring"
 
 import "./banner.css";
 import { useState } from "react";
@@ -29,7 +30,16 @@ const Banner = () => {
       }
     
   }, []);
+
+  const styles = useSpring({
+    from: { transform: "translate(100%,0)" },
+    to: [{ transform: "translate(-5%,0)" }],
+    config: { duration: 1000 },
+    
+  });
+
   return (
+    
     <section className=" banner-section bg-colo/r-1" id="banner-section">
       <div
         className="pattern-layer"
@@ -93,9 +103,19 @@ const Banner = () => {
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 image-column ">
             <div ref={ref} id="c" className="image-box ">
-              <figure className="image ">
+            {/* <Spring from={{opacity:0}} to={{opacity:1}}>
+              {props=>(
+                
+              <animated.figure style={props} className="image " >
                 <img src={banner} alt=""></img>
-              </figure>
+              </animated.figure>)
+               
+              }
+            </Spring> */}
+<figure className="image">
+  <animated.img style={styles} src={banner} alt=""></animated.img>
+</figure>
+
             </div>
           </div>
         </div>

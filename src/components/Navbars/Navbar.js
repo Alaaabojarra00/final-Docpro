@@ -1,12 +1,26 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./style.css";
+import "./navbar.css";
 
 import img from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+
+  useEffect(() => {
+    const isSticky = (e) => {
+      const header = document.querySelector('.header-lower');
+      const scrollTop = window.scrollY;
+      scrollTop >= 250 ? header.classList.add('sticky-header') : header.classList.remove('sticky-header');
+  };
+    window.addEventListener('scroll', isSticky);
+    return () => {
+        window.removeEventListener('scroll', isSticky);
+    };
+});
+
   return (
     <div className="boxed_wrapper ">
       <header className="main-header style-two">
