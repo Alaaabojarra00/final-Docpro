@@ -7,8 +7,8 @@ function Footer() {
   return (
     <section className="footer-section">
       <div className="footer">
-        <footer className="one main-footer">
-          <div className="footer-top">
+        <footer className="one main-footer col-lg-3 col-md-12 col-sm-12">
+          <div className="footer-top footer-top-one">
             <div className="auto-container">
               <div className="widget-section">
                 <div className="row clearfix">
@@ -32,8 +32,8 @@ function Footer() {
             </div>
           </div>
         </footer>
-        <footer className="two main-footer">
-          <div className="footer-top">
+        <footer className="two main-footer col-lg-3 col-md-12 col-sm-12">
+          <div className="footer-top footer-top-two">
             <div className="auto-container">
               <div className="widget-section">
                 <div className="row clearfix">
@@ -71,8 +71,8 @@ function Footer() {
             </div>
           </div>
         </footer>
-        <footer className="three main-footer">
-          <div className="footer-top">
+        <footer className="three main-footer col-lg-3 col-md-12 col-sm-12">
+          <div className="footer-top footer-top-three">
             <div className="auto-container">
               <div className="widget-section">
                 <div className="row clearfix">
@@ -107,8 +107,8 @@ function Footer() {
             </div>
           </div>
         </footer>
-        <footer className="four main-footer">
-          <div className="footer-top">
+        <footer className="four main-footer col-lg-3 col-md-12 col-sm-12">
+          <div className="footer-top footer-top-four">
             <div className="auto-container">
               <div className="widget-section">
                 <div className="row clearfix">

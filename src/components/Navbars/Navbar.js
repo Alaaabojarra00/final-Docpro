@@ -1,25 +1,26 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./navbar.css";
+import "../../responsive.css";
 
 import img from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-
   useEffect(() => {
     const isSticky = (e) => {
-      const header = document.querySelector('.header-lower');
+      const header = document.querySelector(".header-lower");
       const scrollTop = window.scrollY;
-      scrollTop >= 250 ? header.classList.add('sticky-header') : header.classList.remove('sticky-header');
-  };
-    window.addEventListener('scroll', isSticky);
-    return () => {
-        window.removeEventListener('scroll', isSticky);
+      scrollTop >= 250
+        ? header.classList.add("sticky-header")
+        : header.classList.remove("sticky-header");
     };
-});
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
 
   return (
     <div className="boxed_wrapper ">
@@ -67,16 +68,16 @@ const Navbar = () => {
                 </figure>
               </div>
               <div className="menu-area">
-                <nav className="main-menu navbar-expand-md navbar-light">
-                  <div
-                    className="collapse navbar-collapse show clearfix"
-                    id="navbarSupportedContent"
-                  >
-                    <ul className="navigation clearfix">
+                <div className="mobile-nav-toggler">
+                  <i className="icon-bar"></i>
+                  <i className="icon-bar"></i>
+                  <i className="icon-bar"></i>
+                </div>
+                <nav className="main-menu navbar-expand-md ">
+                  <div className="navbar-collapse">
+                    <ul className="navigation ">
                       <li>
-                      <Link to="/">Home</Link>
-                          
-                        
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
                         <a title="about" href="#about-section">
@@ -89,12 +90,10 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li>
-                      <Link to="/all-doctor">Doctors</Link>
+                        <Link to="/all-doctor">Doctors</Link>
                       </li>
                       <li>
-                      <Link to="/all-clinic">Clinic</Link>
-                          
-    
+                        <Link to="/all-clinic">Clinic</Link>
                       </li>
                       <li>
                         <a title="Blog" href="/">
@@ -106,7 +105,11 @@ const Navbar = () => {
                         <Link to="/contact-Us">Contact Us</Link>
                       </li>
                     </ul>
-                    <div className="btn-box"><a href="##" className="theme-btn-one"><i className="icon-image fa fa-plus"></i>Appointment </a></div>
+                    <div className="btn-box">
+                      <a href="##" className="theme-btn-one">
+                        <i className="icon-image fa fa-plus"></i>Appointment{" "}
+                      </a>
+                    </div>
                   </div>
                 </nav>
               </div>

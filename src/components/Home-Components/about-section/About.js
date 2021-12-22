@@ -6,7 +6,7 @@ import about1 from "../../../assets/images/about-1.png";
 const About = () => {
   return (
     <div className="auto-container parent-about" id="about-section">
-      <section className="about-section ">
+      <section className="about-section one ">
         <div className="auto-container">
           <div className="row align-items-center clearfix">
             <div className="col-lg-12 col-md-12 col-sm-12 image-column">

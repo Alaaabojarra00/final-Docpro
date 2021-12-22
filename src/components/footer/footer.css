@@ -1,3 +1,28 @@
+@media (max-width: 767px) {
+  .footer {
+    max-width: 767px;
+  }
+}
+
+@media (min-width: 991px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 991px) {
+  .footer-top-one {
+    padding-top: 155px !important;
+    padding-bottom: 20px !important;
+  }
+}
+@media (max-width: 991px) {
+  .footer-top-two,
+  .footer-top-three,
+  .footer-top-four {
+    padding: 0 !important;
+  }
+}
 .footer-section {
   background-color: #1a2332;
   background-image: url(../../assets/images/shape-30.png);
@@ -7,9 +32,6 @@
 .footer {
   max-width: 1140px;
 
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
   position: relative;
 }
 .main-footer {
@@ -75,7 +97,7 @@ ul {
 }
 .footer-top .links-widget .links li a:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0%;
   height: 1px;
   left: 0px;
@@ -88,18 +110,7 @@ ul {
 .main-footer li {
   line-height: 35px;
 }
-.footer-section .one {
-  width: 34.3%;
-}
-.footer-section .two {
-  width: 17.895%;
-}
-.footer-section .three {
-  width: 22.743%;
-}
-.footer-section .four {
-  width: 25%;
-}
+
 .footer-top .contact-widget .widget-content li {
   position: relative;
   display: block;
@@ -141,7 +152,7 @@ ul {
 }
 .footer-bottom .footer-nav li:first-child::before {
   position: absolute;
-  content: '';
+  content: "";
   background: #fff;
   width: 1px;
   height: 13px;

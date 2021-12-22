@@ -1,46 +1,38 @@
-import React, { useEffect , useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import shap from "../../../assets/images/shape-2.png";
 import banner from "../../../assets/images/banner-image-1-1.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import {useSpring , animated} from "react-spring"
+import { useSpring, animated } from "react-spring";
 
 import "./banner.css";
 import { useState } from "react";
 const Banner = () => {
   const [input, setInput] = useState("");
 
-  const ref =useRef();
+  const ref = useRef();
   useEffect(() => {
-    
-      const listener = (event) => {
-     if(ref.current&&event.target&&ref.current.contains(event.target)){
-      document.getElementById('c').classList.add("ss")
-      
-        }  
-        else{
-          document.getElementById('c').classList.remove("ss")
-        } 
-      };
-      document.addEventListener("mousemove", listener);
-      
-      return()=>{
-        document.removeEventListener("mousemove",listener)
-        
-        
+    const listener = (event) => {
+      if (ref.current && event.target && ref.current.contains(event.target)) {
+        document.getElementById("c").classList.add("ss");
+      } else {
+        document.getElementById("c").classList.remove("ss");
       }
-    
+    };
+    document.addEventListener("mousemove", listener);
+
+    return () => {
+      document.removeEventListener("mousemove", listener);
+    };
   }, []);
 
   const styles = useSpring({
     from: { transform: "translate(100%,0)" },
     to: [{ transform: "translate(-5%,0)" }],
     config: { duration: 1000 },
-    
   });
 
   return (
-    
-    <section className=" banner-section bg-colo/r-1" id="banner-section">
+    <section className=" banner-section  bg-color-1" id="banner-section">
       <div
         className="pattern-layer"
         style={{ backgroundImage: `url(${shap})` }}
@@ -103,7 +95,7 @@ const Banner = () => {
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 image-column ">
             <div ref={ref} id="c" className="image-box ">
-            {/* <Spring from={{opacity:0}} to={{opacity:1}}>
+              {/* <Spring from={{opacity:0}} to={{opacity:1}}>
               {props=>(
                 
               <animated.figure style={props} className="image " >
@@ -112,10 +104,9 @@ const Banner = () => {
                
               }
             </Spring> */}
-<figure className="image">
-  <animated.img style={styles} src={banner} alt=""></animated.img>
-</figure>
-
+              <figure className="image">
+                <animated.img style={styles} src={banner} alt=""></animated.img>
+              </figure>
             </div>
           </div>
         </div>

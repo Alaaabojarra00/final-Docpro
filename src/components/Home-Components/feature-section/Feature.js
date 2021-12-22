@@ -78,11 +78,7 @@ const Feature = () => {
               className="col-lg-3 col-md-6 col-sm-12 feature-block"
               key={index}
             >
-              <div
-                className="feature-block-one wow fadeInUp animated animated"
-                data-wow-delay="00ms"
-                data-wow-duration="1500ms"
-              >
+              <div className="feature-block-one ">
                 <div className="inner-box">
                   <div className="pattern">
                     <div
@@ -100,7 +96,7 @@ const Feature = () => {
                   <p>{value.desc}</p>
                   <h3>{value.title}</h3>
                   <div className="link">
-                    <a href="all-clinic-2/index.html">
+                    <a href="all-clinic-2">
                       <i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
