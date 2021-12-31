@@ -1,7 +1,7 @@
-import { useEffect } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, Clinic, Doctor, ContactUs, Error404 } from './pages'
-import { Footer, Navbar, Scroll, Agent } from './components'
+import { useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home, Clinic, Doctor, ContactUs, Error404 } from "./pages";
+import { Footer, Navbar, Scroll, Agent } from "./components";
 
 const Layout = ({ children }) => {
   return (
@@ -12,15 +12,15 @@ const Layout = ({ children }) => {
       <Agent />
       <Footer />
     </>
-  )
-}
+  );
+};
 const App = () => {
   useEffect(() => {
-    const dir = localStorage.getItem('dir')
-    const screen = localStorage.getItem('screen')
-    document.body.classList.add(dir)
-    document.body.classList.add(screen)
-  }, [])
+    const dir = localStorage.getItem("dir");
+    const screen = localStorage.getItem("screen");
+    document.body.classList.add(dir);
+    document.body.classList.add(screen);
+  }, []);
   return (
     <Router>
       <Switch>
@@ -79,10 +79,10 @@ const App = () => {
           )}
         />
 
-        <Route path="*" component={()=><Error404 />} />
+        <Route path="*" component={() => <Error404 />} />
       </Switch>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;
