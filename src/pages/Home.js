@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import {
   Banner,
   Client,
@@ -8,16 +8,16 @@ import {
   Test,
   Team,
   Switcher,
-} from '../components'
+} from "../components";
 export const Home = () => {
   useEffect(() => {
-    const dir = localStorage.getItem('dir')
-    const screen = localStorage.getItem('screen')
-    document.body.classList.add(dir)
-    document.body.classList.add(screen)
-  }, [])
+    const dir = localStorage.getItem("dir");
+    const screen = localStorage.getItem("screen");
+    document.body.classList.add(dir);
+    document.body.classList.add(screen);
+  }, []);
   return (
-    <div className="Home-page">
+    <div className="Home-page" id="final-Docpro">
       <Banner />
       <Switcher />
       <Client />
@@ -27,5 +27,5 @@ export const Home = () => {
       <Test />
       <Team />
     </div>
-  )
-}
+  );
+};

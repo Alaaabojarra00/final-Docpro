@@ -26,7 +26,7 @@ const App = () => {
       <Switch>
         <Route
           exact
-          path="/"
+          path="/final-Docpro"
           component={() => (
             <Layout>
               <Home />
