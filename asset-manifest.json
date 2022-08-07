@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/final-Docpro/static/css/main.920022b0.chunk.css",
+    "main.css": "/final-Docpro/static/css/main.252f6134.chunk.css",
     "main.js": "/final-Docpro/static/js/main.33132f42.chunk.js",
     "main.js.map": "/final-Docpro/static/js/main.33132f42.chunk.js.map",
     "runtime-main.js": "/final-Docpro/static/js/runtime-main.6ac35c9b.js",
@@ -10,7 +10,7 @@
     "static/js/2.68e4bcbf.chunk.js.map": "/final-Docpro/static/js/2.68e4bcbf.chunk.js.map",
     "index.html": "/final-Docpro/index.html",
     "static/css/2.0969d4a5.chunk.css.map": "/final-Docpro/static/css/2.0969d4a5.chunk.css.map",
-    "static/css/main.920022b0.chunk.css.map": "/final-Docpro/static/css/main.920022b0.chunk.css.map",
+    "static/css/main.252f6134.chunk.css.map": "/final-Docpro/static/css/main.252f6134.chunk.css.map",
     "static/js/2.68e4bcbf.chunk.js.LICENSE.txt": "/final-Docpro/static/js/2.68e4bcbf.chunk.js.LICENSE.txt",
     "static/media/1.6f0f95b5.svg": "/final-Docpro/static/media/1.6f0f95b5.svg",
     "static/media/15.2c952c0e.svg": "/final-Docpro/static/media/15.2c952c0e.svg",
@@ -42,7 +42,7 @@
     "static/js/runtime-main.6ac35c9b.js",
     "static/css/2.0969d4a5.chunk.css",
     "static/js/2.68e4bcbf.chunk.js",
-    "static/css/main.920022b0.chunk.css",
+    "static/css/main.252f6134.chunk.css",
     "static/js/main.33132f42.chunk.js"
   ]
 }
